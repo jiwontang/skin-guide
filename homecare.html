@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>0원 나쁜 습관 파괴기 — 스킨케어 유틸리티</title>
+  <meta name="description" content="내 피부를 망치는 생활 습관 5가지 체크리스트. 비싼 화장품 발라도 소용없는 이유를 찾아보세요." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <h1 class="site-header__logo"><a href="index.html">✨ 피부 성향 가이드 & 홈케어 도우미</a></h1>
+      <button class="hamburger-menu" id="hamburger-btn" aria-label="메뉴 열기">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation Menu Overlay -->
+  <div class="menu-overlay" id="menu-overlay">
+    <nav class="menu-nav">
+      <div class="menu-header">
+        <h2 class="menu-title">모든 기능</h2>
+        <button class="menu-close" id="menu-close-btn" aria-label="메뉴 닫기">✕</button>
+      </div>
+
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="index.html" class="menu-link">🏠 홈</a>
+        </li>
+        <li class="menu-item">
+          <a href="skintype.html" class="menu-link">🔍 내 피부 타입 확인 가이드</a>
+        </li>
+        <li class="menu-item">
+          <a href="ingredient.html" class="menu-link">🚦 화장품 성분 신호등</a>
+        </li>
+        <li class="menu-item">
+          <a href="homecare.html" class="menu-link current">💆‍♀️ 0원 나쁜 습관 파괴기</a>
+        </li>
+        <li class="menu-item">
+          <a href="d-1.html" class="menu-link">✨ D-1 중요날 찰떡 루틴</a>
+        </li>
+        <li class="menu-item">
+          <a href="soothing.html" class="menu-link">🚨 오늘 밤 긴급 진정 가이드</a>
+        </li>
+        <li class="menu-item">
+          <a href="trace.html" class="menu-link">🩹 흔적 & 케어 루틴 가이드</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Tool Area -->
+    <section class="ingredient-tool" id="tool-area">
+      <div class="ingredient-tool__container">
+        <h2 class="ingredient-tool__title">💆‍♀️ 0원 나쁜 습관 파괴기</h2>
+        <p class="ingredient-tool__subtitle">비싼 화장품 발라도 소용없는 이유? 생활 습관 5가지 체크리스트</p>
+
+        <div class="skintype-form" style="margin-top: 3.2rem;">
+          <p style="color: #F8FAFC; font-size: 1.6rem; font-weight: 500; margin-bottom: 1.6rem; text-align: center;">
+            해당하는 습관을 모두 선택해 주세요.
+          </p>
+          <div class="skintype-options">
+            <label class="skintype-option" style="padding: 2.4rem;">
+              <input type="checkbox" name="habit" value="shower" />
+              <span class="skintype-option__text">샤워기에서 나오는 뜨거운 물로 얼굴까지 세안한다.</span>
+            </label>
+            <label class="skintype-option" style="padding: 2.4rem;">
+              <input type="checkbox" name="habit" value="touch" />
+              <span class="skintype-option__text">무의식적으로 턱을 괴거나 얼굴을 만진다.</span>
+            </label>
+            <label class="skintype-option" style="padding: 2.4rem;">
+              <input type="checkbox" name="habit" value="towel" />
+              <span class="skintype-option__text">베개 커버와 수건을 3일 이상 교체하지 않는다.</span>
+            </label>
+            <label class="skintype-option" style="padding: 2.4rem;">
+              <input type="checkbox" name="habit" value="overcare" />
+              <span class="skintype-option__text">기초 스킨케어를 매일 4단계(토너, 앰플, 로션, 크림 등) 이상 겹쳐 바른다.</span>
+            </label>
+            <label class="skintype-option" style="padding: 2.4rem;">
+              <input type="checkbox" name="habit" value="suncream" />
+              <span class="skintype-option__text">선크림을 바른 날에도 1차 세안(폼클렌징)만 하고 끝낸다.</span>
+            </label>
+          </div>
+
+          <button id="check-homecare-btn" class="ingredient-btn" style="margin-top: 1.6rem; width: 100%;">
+            결과 확인
+          </button>
+        </div>
+
+        <!-- Result Area -->
+        <div id="result-area" class="result-area hidden">
+          <!-- Content filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO Article -->
+    <article class="seo-article" style="margin-top: 4rem; padding-bottom: 6rem;">
+      <div class="seo-article__container"
+        style="max-width: 96rem; margin: 0 auto; padding-inline: clamp(2.4rem, 6vw, 10rem);">
+        <h2 class="seo-article__title" style="color: #F8FAFC; margin-bottom: 2rem;">
+          0원 홈케어의 핵심: 화장품 다이어트와 피부 장벽
+        </h2>
+        <div class="seo-article__body" style="color: #E2E8F0; line-height: 1.8; font-size: 1.6rem;">
+          <p style="margin-bottom: 1.6rem;">
+            우리가 매일 사용하는 화장품의 개수보다 더 중요한 것은 바로 <strong style="color: #60A5FA;">건강한 뷰티 습관</strong>을 갖추는 것입니다. 현대인들은 수많은 뷰티
+            정보 속에서 다양한 기능성 화장품을 덧바르는 것을 스킨케어의 정답으로 여기곤 합니다. 하지만 여러 제품을 겹쳐 바르는 것은 오히려 모공을 막아 트러블을 유발하고, 서로 충돌하는 성분들이 피부에
+            부담을 주어 장벽을 무너뜨리는 결과를 초래할 수 있습니다. 이것이 바로 스킨케어 단계를 최소화하는 <strong style="color: #F472B6;">화장품 다이어트</strong>가
+            필수적인 이유입니다.
+          </p>
+          <p style="margin-bottom: 1.6rem;">
+            피부 장벽은 우리 피부의 수분이 날아가지 않도록 막아주고, 외부의 유해 물질로부터 보호하는 강력한 방어막입니다. 잘못된 세안 습관이나 무의식적인 마찰은 이 방어막을 미세하게 손상시킵니다. 예를
+            들어, 샤워기 물줄기의 강한 수압과 뜨거운 온도는 피부의 천연 보습막을 씻어내어 극심한 속건조를 유발합니다. 아무리 비싼 수분 크림을 발라도 피부가 계속 건조하다면, 가장 먼저 <strong
+              style="color: #60A5FA;">나의 생활 습관 속에 피부 장벽을 긁어내는 행동이 없는지 점검</strong>해야 합니다.
+          </p>
+          <p>
+            진정한 0원 홈케어는 비싼 기기나 특별한 마사지보다 앞서, <strong style="color: #4ADE80;">피부에 자극이 되는 나쁜 습관을 파괴하는 것</strong>에서 시작됩니다.
+            위생적인 수건 사용, 얼굴에 손대지 않기, 그리고 내 피부가 소화할 수 있는 꼭 필요한 성분만 남기는 미니멀 스킨케어를 실천해 보세요. 불필요한 단계를 덜어내고 자극을 최소화할 때, 피부는
+            본연의 자생력을 회복하고 스스로 빛나기 시작할 것입니다. 지금부터 작은 습관의 변화로 가장 확실한 스킨케어 효과를 경험해 보세요.
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p class="footer-copyright">
+        &copy; 2026 스킨케어 유틸리티. All rights reserved.
+      </p>
+      <nav class="footer-nav">
+        <a href="#" class="footer-link">이용약관</a>
+        <span class="footer-divider">|</span>
+        <a href="#" class="footer-link">개인정보처리방침</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/homecare.js" defer></script>
+</body>
+
+</html>

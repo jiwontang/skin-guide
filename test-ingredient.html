@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전성분 분석기 테스트</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #0F172A;
+      color: #F1F5F9;
+    }
+
+    h1 {
+      color: #60A5FA;
+    }
+
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 15px;
+      font-size: 16px;
+      border: 2px solid #60A5FA;
+      border-radius: 8px;
+      background: #1E293B;
+      color: #F1F5F9;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      background: #60A5FA;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #3B82F6;
+    }
+
+    #result-area {
+      margin-top: 30px;
+    }
+
+    .result-message {
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .result-message.safe {
+      background: rgba(74, 222, 128, 0.2);
+      border: 2px solid #4ade80;
+      color: #4ade80;
+    }
+
+    .result-message.warning {
+      background: rgba(248, 113, 113, 0.2);
+      border: 2px solid #f87171;
+      color: #f87171;
+    }
+
+    .result-box {
+      padding: 25px;
+      background: rgba(30, 41, 59, 0.8);
+      border: 2px solid #60A5FA;
+      border-radius: 12px;
+    }
+
+    .result-title {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .warning-highlight {
+      background: #F472B6;
+      color: white;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .risk-high {
+      border-left: 4px solid #f87171;
+      padding: 15px;
+      margin: 15px 0;
+      background: rgba(248, 113, 113, 0.1);
+      border-radius: 8px;
+    }
+
+    .risk-medium {
+      border-left: 4px solid #fbbf24;
+      padding: 15px;
+      margin: 15px 0;
+      background: rgba(251, 191, 36, 0.1);
+      border-radius: 8px;
+    }
+
+    .risk-low {
+      border-left: 4px solid #4ade80;
+      padding: 15px;
+      margin: 15px 0;
+      background: rgba(74, 222, 128, 0.1);
+      border-radius: 8px;
+    }
+
+    .result-tip {
+      margin-top: 20px;
+      padding: 15px;
+      background: rgba(96, 165, 250, 0.1);
+      border-left: 4px solid #60A5FA;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🚦 전성분 분석기 테스트</h1>
+  <p>아래에 화장품 성분을 입력하고 버튼을 클릭하세요.</p>
+
+  <textarea id="ingredient-input" placeholder="예시: 정제수, 글리세린, 페녹시에탄올, 파라벤, 향료, 소듐라우릴설페이트"></textarea>
+
+  <button id="analyze-btn">주의 성분 확인하기</button>
+
+  <div id="result-area"></div>
+
+  <script src="assets/js/ingredient.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>내 피부 타입 확인 가이드 — 스킨케어 유틸리티</title>
+  <meta name="description" content="세안 후 증상으로 건성, 지성, 복합성 등 내 피부 타입을 1분 만에 확인하세요." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <h1 class="site-header__logo"><a href="index.html">✨ 피부 성향 가이드 & 홈케어 도우미</a></h1>
+      <button class="hamburger-menu" id="hamburger-btn" aria-label="메뉴 열기">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation Menu Overlay -->
+  <div class="menu-overlay" id="menu-overlay">
+    <nav class="menu-nav">
+      <div class="menu-header">
+        <h2 class="menu-title">모든 기능</h2>
+        <button class="menu-close" id="menu-close-btn" aria-label="메뉴 닫기">✕</button>
+      </div>
+
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="index.html" class="menu-link">🏠 홈</a>
+        </li>
+        <li class="menu-item">
+          <a href="skintype.html" class="menu-link current">🔍 내 피부 타입 확인 가이드</a>
+        </li>
+        <li class="menu-item">
+          <a href="ingredient.html" class="menu-link">🚦 화장품 성분 신호등</a>
+        </li>
+        <li class="menu-item">
+          <a href="homecare.html" class="menu-link">💆‍♀️ 0원 나쁜 습관 파괴기</a>
+        </li>
+        <li class="menu-item">
+          <a href="d-1.html" class="menu-link">✨ D-1 중요날 찰떡 루틴</a>
+        </li>
+        <li class="menu-item">
+          <a href="soothing.html" class="menu-link">🚨 오늘 밤 긴급 진정 가이드</a>
+        </li>
+        <li class="menu-item">
+          <a href="trace.html" class="menu-link">🩹 흔적 & 케어 루틴 가이드</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Tool Area -->
+    <section class="ingredient-tool" id="tool-area">
+      <div class="ingredient-tool__container">
+        <h2 class="ingredient-tool__title">🔍 내 피부 타입 확인 가이드</h2>
+        <p class="ingredient-tool__subtitle">그래서 건성, 지성, 복합성 중 난 뭔데? 1분 만에 알아보기</p>
+
+        <div class="skintype-form">
+          <!-- Question 1 -->
+          <div class="skintype-question">
+            <h3 class="skintype-question__title">Q1. 세안 후 아무것도 안 바르고 10분 뒤 내 피부는?</h3>
+            <div class="skintype-options">
+              <label class="skintype-option">
+                <input type="radio" name="q1" value="dry" />
+                <span class="skintype-option__text">전체적으로 당김</span>
+              </label>
+              <label class="skintype-option">
+                <input type="radio" name="q1" value="combo" />
+                <span class="skintype-option__text">T존만 번들</span>
+              </label>
+              <label class="skintype-option">
+                <input type="radio" name="q1" value="oily" />
+                <span class="skintype-option__text">전체적으로 유분</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="skintype-question">
+            <h3 class="skintype-question__title">Q2. 평소 모공과 피부 결 상태는?</h3>
+            <div class="skintype-options">
+              <label class="skintype-option">
+                <input type="radio" name="q2" value="dry" />
+                <span class="skintype-option__text">모공이 거의 안 보임</span>
+              </label>
+              <label class="skintype-option">
+                <input type="radio" name="q2" value="combo" />
+                <span class="skintype-option__text">코 주변만 모공이 보임</span>
+              </label>
+              <label class="skintype-option">
+                <input type="radio" name="q2" value="oily" />
+                <span class="skintype-option__text">전체적으로 모공이 넓고 요철이 있음</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="skintype-question">
+            <h3 class="skintype-question__title">Q3. 오후 3시, 내 피부의 주된 고민은?</h3>
+            <div class="skintype-options">
+              <label class="skintype-option">
+                <input type="radio" name="q3" value="dry" />
+                <span class="skintype-option__text">하얗게 일어나는 각질</span>
+              </label>
+              <label class="skintype-option">
+                <input type="radio" name="q3" value="combo" />
+                <span class="skintype-option__text">번들거리는 유분과 속당김</span>
+              </label>
+              <label class="skintype-option">
+                <input type="radio" name="q3" value="oily" />
+                <span class="skintype-option__text">얼굴 전체의 과도한 기름기</span>
+              </label>
+            </div>
+          </div>
+
+          <button id="check-skintype-btn" class="ingredient-btn" style="margin-top: 1.6rem; width: 100%;">
+            내 피부 성향 확인하기
+          </button>
+        </div>
+
+        <!-- Result Area -->
+        <div id="result-area" class="result-area hidden">
+          <!-- Content filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO Article -->
+    <article class="seo-article" style="margin-top: 4rem; padding-bottom: 6rem;">
+      <div class="seo-article__container"
+        style="max-width: 96rem; margin: 0 auto; padding-inline: clamp(2.4rem, 6vw, 10rem);">
+        <h2 class="seo-article__title" style="color: #F8FAFC; margin-bottom: 2rem;">
+          알아두면 좋은 피부 관리 상식
+        </h2>
+        <div class="seo-article__body" style="color: #E2E8F0; line-height: 1.8; font-size: 1.6rem;">
+          <p style="margin-bottom: 1.6rem;">
+            우리의 피부는 매일 외부 환경과 맞서 싸우는 최전선에 있습니다. 건강한 피부를 유지하기 위해 가장 먼저 이해해야 할 것은 바로 <strong style="color: #60A5FA;">피부
+              장벽(Skin Barrier)</strong>의 원리입니다. 피부의 가장 바깥층인 각질층은 수분이 증발하는 것을 막고 외부 자극 물질이나 세균의 침투를 방어하는 '벽돌과 시멘트' 같은 구조로
+            이루어져 있습니다. 이 장벽이 무너지면 피부는 쉽게 건조해지고 작은 자극에도 민감하게 반응하게 됩니다.
+          </p>
+          <p style="margin-bottom: 1.6rem;">
+            성공적인 홈케어의 핵심은 <strong style="color: #F472B6;">유수분 밸런스(Oil-Water Balance)</strong>를 맞추는 데 있습니다. 흔히 지성 피부는 수분
+            보충을 소홀히 하기 쉽고, 건성 피부는 유분막 형성을 잊는 경우가 많습니다. 하지만 수분이 부족하면 피부는 스스로를 보호하기 위해 오히려 피지 분비를 늘리게 되며(수분 부족형 지성), 유분이
+            부족하면 수분이 쉽게 증발하여 극심한 건조함을 유발합니다. 따라서 자신의 피부 타입에 맞는 제형을 선택하여 수분을 깊숙이 채워주고 적절한 유분막으로 덮어주는 것이 필수적입니다.
+          </p>
+          <p>
+            또한, 화장품을 사용할 때는 클렌징부터 보습까지 단계별로 <strong style="color: #60A5FA;">약산성 환경</strong>을 유지해 주는 것이 좋습니다. 건강한 피부는 pH
+            5.5 전후의 약산성을 띠고 있으며, 이 상태일 때 피부 정상균 총이 활발하게 활동하여 외부 유해균을 억제합니다. 오늘 확인해 본 피부 성향 가이드를 바탕으로, 내 피부가 진짜 필요로 하는
+            스킨케어 루틴을 하나씩 완성해 보세요. 꾸준한 관심과 올바른 습관이 변화의 시작입니다.
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p class="footer-copyright">
+        &copy; 2026 스킨케어 유틸리티. All rights reserved.
+      </p>
+      <nav class="footer-nav">
+        <a href="#" class="footer-link">이용약관</a>
+        <span class="footer-divider">|</span>
+        <a href="#" class="footer-link">개인정보처리방침</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/skintype.js" defer></script>
+</body>
+
+</html>

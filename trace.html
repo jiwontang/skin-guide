@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>흔적 & 케어 루틴 가이드 — 스킨케어 유틸리티</title>
+  <meta name="description" content="비타민C, 레티놀 등 고효능 성분을 활용한 흔적 케어 및 맑은 피부톤 스킨케어 팁." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <h1 class="site-header__logo"><a href="index.html">✨ 피부 성향 가이드 & 홈케어 도우미</a></h1>
+      <button class="hamburger-menu" id="hamburger-btn" aria-label="메뉴 열기">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menu-overlay">
+    <nav class="menu-nav">
+      <div class="menu-header">
+        <h2 class="menu-title">모든 기능</h2>
+        <button class="menu-close" id="menu-close-btn" aria-label="메뉴 닫기">✕</button>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-item"><a href="index.html" class="menu-link">🏠 홈</a></li>
+        <li class="menu-item"><a href="skintype.html" class="menu-link">🔍 내 피부 타입 확인 가이드</a></li>
+        <li class="menu-item"><a href="ingredient.html" class="menu-link">🚦 화장품 성분 신호등</a></li>
+        <li class="menu-item"><a href="homecare.html" class="menu-link">💆‍♀️ 0원 나쁜 습관 파괴기</a></li>
+        <li class="menu-item"><a href="d-1.html" class="menu-link">✨ D-1 중요날 찰떡 루틴</a></li>
+        <li class="menu-item"><a href="soothing.html" class="menu-link">🚨 오늘 밤 긴급 진정 가이드</a></li>
+        <li class="menu-item"><a href="trace.html" class="menu-link current">🩹 흔적 & 케어 루틴 가이드</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <section class="ingredient-tool">
+      <div class="ingredient-tool__container">
+        <h2 class="ingredient-tool__title">🩹 흔적 & 케어 루틴 가이드</h2>
+        <p class="ingredient-tool__subtitle">비타민C, 레티놀 활용을 통한 맑은 피부톤 스킨케어 팁</p>
+
+        <!-- 유명템 매칭 체크 영역 -->
+        <div class="matching-check-glow" style="margin-top: 3.2rem;">
+          <h3 class="matching-check-glow__title">🔍 유명템 매칭 체크</h3>
+          <p class="matching-check-glow__desc">유명한 제품이라도 내 피부에 안 맞으면 독이 될 수 있습니다. 루틴 시작 전 성분 궁합을 확인해 보세요.</p>
+          <div class="matching-btn-group">
+            <button class="matching-btn-primary" id="matching-toggle-btn">제품 성분 입력하고 내 피부와 매칭하기</button>
+            <a href="ingredient.html" class="matching-btn-secondary">나에게 맞는 성분이 무엇인지 모른다면? (성분 신호등 가기)</a>
+          </div>
+
+          <div id="matching-form-area" style="margin-top: 2.4rem;">
+            <textarea id="matching-ingredient-input" class="ingredient-textarea" placeholder="화해나 올리브영에서 복사한 미백/재생 제품의 전성분을 여기에 붙여넣어 주세요."></textarea>
+            <button id="matching-submit-btn" class="ingredient-btn" style="margin-top: 1.6rem; width: 100%;">성분 매칭 시작</button>
+          </div>
+
+          <div id="matching-result-area" style="display: none;"></div>
+        </div>
+
+        <!-- Trace Care Content -->
+        <div class="skintype-form">
+          <h3 style="color: #A78BFA; font-size: 2rem; margin-bottom: 1.6rem;">🌙 밤 전용 미백 & 재생 루틴</h3>
+          <ul style="color: #E2E8F0; font-size: 1.6rem; line-height: 1.8; list-style-type: disc; padding-left: 2rem;">
+            <li style="margin-bottom: 1rem;"><strong>1단계: 피부 결 정돈.</strong> 세안 후 자극이 적은 토너로 피부 결을 가볍게 정돈하여 다음 단계의 흡수율을 높입니다.</li>
+            <li style="margin-bottom: 1rem;"><strong>2단계: 고효능 성분 투입.</strong> 순수 비타민C 앰플이나 레티놀 세럼을 완두콩 크기만큼 덜어 고민 부위 위주로 얇게 바릅니다. <br><em style="color:#F87171; font-size:1.4rem;">(주의: 비타민C와 레티놀, AHA/BHA는 절대 한 번에 섞어 쓰지 마세요. 격일로 사용하거나 아침/저녁으로 나누어 사용하세요.)</em></li>
+            <li style="margin-bottom: 1rem;"><strong>3단계: 충분한 보습.</strong> 고효능 성분은 피부를 건조하게 만들 수 있으므로 세라마이드 등 장벽 강화 크림을 덧발라 줍니다.</li>
+            <li style="margin-bottom: 1rem;"><strong>4단계: 낮 시간 필수 방어.</strong> 다음 날 아침 세안 후에는 반드시 선크림을 500원 동전 크기만큼 꼼꼼히 발라 자외선으로 인한 색소 침착을 막아주세요.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <article class="seo-article" style="margin-top: 4rem; padding-bottom: 6rem;">
+      <div class="seo-article__container" style="max-width: 96rem; margin: 0 auto; padding-inline: clamp(2.4rem, 6vw, 10rem);">
+        <h2 class="seo-article__title" style="color: #F8FAFC; margin-bottom: 2rem;">강력한 성분일수록 정확한 사용법이 필요합니다</h2>
+        <div class="seo-article__body" style="color: #E2E8F0; line-height: 1.8; font-size: 1.6rem;">
+          <p style="margin-bottom: 1.6rem;">
+            여드름이 지나간 자리나 기미, 잡티 같은 흔적을 지우기 위해 많은 사람들이 <strong style="color: #A78BFA;">비타민C, 레티놀, 나이아신아마이드</strong>와 같은 강력한 미백 및 재생 성분을 찾습니다. 이 성분들은 피부 턴오버를 촉진하고 멜라닌 색소의 생성을 억제하여 맑고 투명한 피부톤을 만드는 데 확실한 도움을 줍니다. 하지만 효과가 강력한 만큼 부작용의 위험도 따릅니다.
+          </p>
+          <p>
+            가장 흔한 실수는 "많이 바를수록, 여러 개를 한 번에 바를수록 빨리 좋아질 것"이라는 착각입니다. 산성인 비타민C와 레티놀을 함께 사용하면 피부에 극심한 자극을 주어 오히려 장벽이 무너지고 붉어질 수 있습니다. 처음 사용할 때는 낮은 농도부터 시작해 피부의 적응 기간을 두는 것이 좋습니다. 또한 이 성분들은 빛과 열에 약해 <strong style="color: #F472B6;">밤에만 사용하는 것을 권장</strong>하며, 사용 기간 중에는 반드시 자외선 차단에 신경 써야 합니다. 유명세에 흔들리지 말고 내 피부가 감당할 수 있는 농도와 조합을 찾아 안전하게 흔적 케어를 시작하세요.
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p class="footer-copyright">&copy; 2026 스킨케어 유틸리티. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/matching.js" defer></script>
+</body>
+</html>

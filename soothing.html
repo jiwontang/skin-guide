@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>오늘 밤 긴급 진정 가이드 — 스킨케어 유틸리티</title>
+  <meta name="description" content="갑작스럽게 올라온 트러블과 붉은기를 잠재우는 쿨링 및 진정 스킨케어 응급처치법." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <h1 class="site-header__logo"><a href="index.html">✨ 피부 성향 가이드 & 홈케어 도우미</a></h1>
+      <button class="hamburger-menu" id="hamburger-btn" aria-label="메뉴 열기">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menu-overlay">
+    <nav class="menu-nav">
+      <div class="menu-header">
+        <h2 class="menu-title">모든 기능</h2>
+        <button class="menu-close" id="menu-close-btn" aria-label="메뉴 닫기">✕</button>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-item"><a href="index.html" class="menu-link">🏠 홈</a></li>
+        <li class="menu-item"><a href="skintype.html" class="menu-link">🔍 내 피부 타입 확인 가이드</a></li>
+        <li class="menu-item"><a href="ingredient.html" class="menu-link">🚦 화장품 성분 신호등</a></li>
+        <li class="menu-item"><a href="homecare.html" class="menu-link">💆‍♀️ 0원 나쁜 습관 파괴기</a></li>
+        <li class="menu-item"><a href="d-1.html" class="menu-link">✨ D-1 중요날 찰떡 루틴</a></li>
+        <li class="menu-item"><a href="soothing.html" class="menu-link current">🚨 오늘 밤 긴급 진정 가이드</a></li>
+        <li class="menu-item"><a href="trace.html" class="menu-link">🩹 흔적 & 케어 루틴 가이드</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <section class="ingredient-tool">
+      <div class="ingredient-tool__container">
+        <h2 class="ingredient-tool__title">🚨 오늘 밤 긴급 진정 가이드</h2>
+        <p class="ingredient-tool__subtitle">갑작스러운 피부 고민을 빠르게 잠재우는 응급 처치 순서</p>
+
+        <!-- 유명템 매칭 체크 영역 -->
+        <div class="matching-check-glow" style="margin-top: 3.2rem;">
+          <h3 class="matching-check-glow__title">🔍 유명템 매칭 체크</h3>
+          <p class="matching-check-glow__desc">유명한 제품이라도 내 피부에 안 맞으면 독이 될 수 있습니다. 루틴 시작 전 성분 궁합을 확인해 보세요.</p>
+          <div class="matching-btn-group">
+            <button class="matching-btn-primary" id="matching-toggle-btn">제품 성분 입력하고 내 피부와 매칭하기</button>
+            <a href="ingredient.html" class="matching-btn-secondary">나에게 맞는 성분이 무엇인지 모른다면? (성분 신호등 가기)</a>
+          </div>
+
+          <div id="matching-form-area" style="margin-top: 2.4rem;">
+            <textarea id="matching-ingredient-input" class="ingredient-textarea" placeholder="화해나 올리브영에서 복사한 진정/쿨링 제품의 전성분을 여기에 붙여넣어 주세요."></textarea>
+            <button id="matching-submit-btn" class="ingredient-btn" style="margin-top: 1.6rem; width: 100%;">성분 매칭 시작</button>
+          </div>
+
+          <div id="matching-result-area" style="display: none;"></div>
+        </div>
+
+        <!-- Soothing Content -->
+        <div class="skintype-form">
+          <h3 style="color: #4ADE80; font-size: 2rem; margin-bottom: 1.6rem;">🌿 쿨링 & 진정 응급처치 순서</h3>
+          <ul style="color: #E2E8F0; font-size: 1.6rem; line-height: 1.8; list-style-type: disc; padding-left: 2rem;">
+            <li style="margin-bottom: 1rem;"><strong>1단계: 즉각 쿨링.</strong> 냉장고에 10분간 보관한 병풀(시카) 또는 알로에 베라 토너 패드를 붉은 부위에 3분간 올려둡니다.</li>
+            <li style="margin-bottom: 1rem;"><strong>2단계: 진정 성분 투입.</strong> 판테놀이나 마데카소사이드가 함유된 고농축 진정 앰플을 해당 부위에 톡톡 두드려 흡수시킵니다.</li>
+            <li style="margin-bottom: 1rem;"><strong>3단계: 국소 부위 케어.</strong> 고름이 차오른 트러블이라면 압출 전 티트리 오일을 면봉으로 콕 찍어 발라주세요. 이미 터졌다면 하이드로콜로이드 패치를 붙입니다.</li>
+            <li style="margin-bottom: 1rem;"><strong>4단계: 장벽 보호.</strong> 가벼운 시카 크림으로 피부 전체에 보호막을 형성하여 밤새 회복을 돕습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <article class="seo-article" style="margin-top: 4rem; padding-bottom: 6rem;">
+      <div class="seo-article__container" style="max-width: 96rem; margin: 0 auto; padding-inline: clamp(2.4rem, 6vw, 10rem);">
+        <h2 class="seo-article__title" style="color: #F8FAFC; margin-bottom: 2rem;">갑자기 뒤집어진 피부, 무엇이 문제일까요?</h2>
+        <div class="seo-article__body" style="color: #E2E8F0; line-height: 1.8; font-size: 1.6rem;">
+          <p style="margin-bottom: 1.6rem;">
+            어제까지만 해도 멀쩡하던 피부가 아침에 갑자기 붉어지고 트러블이 올라온다면 당황하기 쉽습니다. 피부가 갑자기 민감해지는 주된 원인은 <strong style="color: #60A5FA;">스트레스, 수면 부족, 급격한 온도 변화, 혹은 맞지 않는 화장품 사용</strong> 등 다양합니다. 이럴 때 가장 중요한 것은 무너진 피부 장벽을 진정시키고 열감을 빠르게 내려주는 것입니다.
+          </p>
+          <p>
+            긴급 진정을 위해서는 <strong style="color: #4ADE80;">병풀 추출물(시카), 판테놀(비타민 B5), 알란토인</strong>과 같은 검증된 진정 성분을 활용해야 합니다. 특히 피부 온도가 1도 올라갈 때마다 피지 분비량은 10%씩 증가하므로, 쿨링 효과가 있는 젤 타입의 제품을 사용하면 붉은기를 잠재우는 데 매우 효과적입니다. 주의할 점은 트러블 부위를 손으로 만지거나 억지로 짜내려 하지 말고, 티트리 등 항균 성분을 국소 부위에만 조심스럽게 사용해야 한다는 것입니다. 내 피부 타입과 현재 상태에 맞는 정확한 진정 루틴을 통해 밤사이 피부를 건강하게 회복시켜 보세요.
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p class="footer-copyright">&copy; 2026 스킨케어 유틸리티. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/matching.js" defer></script>
+</body>
+</html>

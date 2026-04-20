@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>스킨케어 유틸리티 - 내 피부를 위한 스마트 가이드</title>
+  <meta name="description" content="피부 타입 확인부터 화장품 성분 분석, 홈케어 루틴까지 - 전문가 수준의 스킨케어 가이드를 무료로 제공합니다." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <h1 class="site-header__logo"><a href="index.html">✨ 피부 성향 가이드 & 홈케어 도우미</a></h1>
+      <button class="hamburger-menu" id="hamburger-btn" aria-label="메뉴 열기">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation Menu Overlay -->
+  <div class="menu-overlay" id="menu-overlay">
+    <nav class="menu-nav">
+      <div class="menu-header">
+        <h2 class="menu-title">모든 기능</h2>
+        <button class="menu-close" id="menu-close-btn" aria-label="메뉴 닫기">✕</button>
+      </div>
+
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="index.html" class="menu-link current">🏠 홈</a>
+        </li>
+        <li class="menu-item">
+          <a href="skintype.html" class="menu-link">🔍 내 피부 타입 확인 가이드</a>
+        </li>
+        <li class="menu-item">
+          <a href="ingredient.html" class="menu-link">🚦 화장품 성분 신호등</a>
+        </li>ㄴ
+        <li class="menu-item">
+          <a href="homecare.html" class="menu-link">💆‍♀️ 0원 나쁜 습관 파괴기</a>
+        </li>
+        <li class="menu-item">
+          <a href="d-1.html" class="menu-link">✨ D-1 중요날 찰떡 루틴</a>
+        </li>
+        <li class="menu-item">
+          <a href="soothing.html" class="menu-link">🚨 오늘 밤 긴급 진정 가이드</a>
+        </li>
+        <li class="menu-item">
+          <a href="trace.html" class="menu-link">🩹 흔적 & 케어 루틴 가이드</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <h2 class="hero-title">내 화장품, 나랑 정말 맞을까? 1초 만에 확인하세요.</h2>
+        <p class="hero-subtitle">복잡한 성분 이름은 몰라도 괜찮아요. 뾰루지 대처법부터 0원 홈케어까지 쉽게 골라 드릴게요.</p>
+      </div>
+    </section>
+
+    <!-- Main Feature Cards -->
+    <section class="feature-cards" aria-labelledby="features-heading">
+      <div class="feature-cards__container">
+        <div class="feature-grid">
+
+          <a href="skintype.html" class="feature-card" id="skin-type-guide">
+            <div class="feature-card__icon">🔍</div>
+            <h3 class="feature-card__title">내 피부 타입 확인 가이드</h3>
+            <p class="feature-card__desc">그래서 건성, 지성, 복합성 중 난 뭔데? 세안 후 증상으로 1분 만에 알아보기</p>
+          </a>
+
+          <a href="ingredient.html" class="feature-card">
+            <div class="feature-card__icon">🚦</div>
+            <h3 class="feature-card__title">화장품 성분 신호등</h3>
+            <p class="feature-card__desc">내 피부 타입에 맞는 성분인지 색상으로 확인</p>
+          </a>
+
+          <a href="homecare.html" class="feature-card" id="homecare-guide">
+            <div class="feature-card__icon">💆‍♀️</div>
+            <h3 class="feature-card__title">0원 나쁜 습관 파괴기</h3>
+            <p class="feature-card__desc">내 피부를 망치는 생활 습관 5가지 체크리스트</p>
+          </a>
+
+          <a href="d-1.html" class="feature-card" id="dday-routine">
+            <div class="feature-card__icon">✨</div>
+            <h3 class="feature-card__title">D-1 중요날 찰떡 루틴</h3>
+            <p class="feature-card__desc">화장이 잘 먹는 최상의 피부 컨디션 만들기</p>
+          </a>
+
+          <a href="soothing.html" class="feature-card" id="emergency-guide">
+            <div class="feature-card__icon">🚨</div>
+            <h3 class="feature-card__title">오늘 밤 긴급 진정 가이드</h3>
+            <p class="feature-card__desc">갑작스러운 고민을 잠재우는 화장품 순서</p>
+          </a>
+
+          <a href="trace.html" class="feature-card" id="scar-care">
+            <div class="feature-card__icon">🩹</div>
+            <h3 class="feature-card__title">흔적 & 케어 루틴 가이드</h3>
+            <p class="feature-card__desc">맑은 피부톤을 위한 스킨케어 팁</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <p class="about-text">
+        피부 고민부터 성분 분석까지, 모든 스킨케어 솔루션을 한 곳에서.<br />
+        과학적 근거를 바탕으로 한 실용적인 가이드를 제공합니다.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p class="footer-copyright">
+        &copy; 2026 스킨케어 유틸리티. All rights reserved.
+      </p>
+      <nav class="footer-nav">
+        <a href="#" class="footer-link">이용약관</a>
+        <span class="footer-divider">|</span>
+        <a href="#" class="footer-link">개인정보처리방침</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+  <script src="assets/js/menu.js" defer></script>
+</body>
+
+</html>
